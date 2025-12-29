@@ -1,0 +1,54 @@
+import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+
+const ADMIN_PASSWORD = 'm4rkzv1v3';
+const AUTH_KEY = 'dripcare_admin_auth';
+
+interface SimpleAuthContextType {
+  isAuthenticated: boolean;
+  loading: boolean;
+  signIn: (password: string) => boolean;
+  signOut: () => void;
+}
+
+const SimpleAuthContext = createContext<SimpleAuthContextType | undefined>(undefined);
+
+export function SimpleAuthProvider({ children }: { children: ReactNode }) {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const authState = localStorage.getItem(AUTH_KEY);
+    if (authState === 'authenticated') {
+      setIsAuthenticated(true);
+    }
+    setLoading(false);
+  }, []);
+
+  const signIn = (password: string): boolean => {
+    if (password === ADMIN_PASSWORD) {
+      setIsAuthenticated(true);
+      localStorage.setItem(AUTH_KEY, 'authenticated');
+      return true;
+    }
+    return false;
+  };
+
+  const signOut = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem(AUTH_KEY);
+  };
+
+  return (
+    <SimpleAuthContext.Provider value={{ isAuthenticated, loading, signIn, signOut }}>
+      {children}
+    </SimpleAuthContext.Provider>
+  );
+}
+
+export function useSimpleAuth() {
+  const context = useContext(SimpleAuthContext);
+  if (context === undefined) {
+    throw new Error('useSimpleAuth must be used within a SimpleAuthProvider');
+  }
+  return context;
+}
