@@ -72,9 +72,14 @@ function App() {
                   className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain relative z-10"
                 />
               </div>
-              <span className="text-lg sm:text-xl md:text-2xl font-light text-white font-display">
-                Drip<span className="font-semibold">&Care</span>
-              </span>
+              <div className="flex flex-col">
+                <span className="text-lg sm:text-xl md:text-2xl font-light text-white font-display leading-tight">
+                  Drip<span className="font-semibold">&Care</span>
+                </span>
+                <span className="text-[10px] sm:text-xs font-light text-white/80 font-display">
+                  by Daniela Rufs
+                </span>
+              </div>
             </div>
 
             <div className="hidden md:flex items-center space-x-6 text-sm">
