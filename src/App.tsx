@@ -161,7 +161,6 @@ function App() {
               </div>
               <p className="text-base sm:text-base md:text-lg text-white/90 leading-relaxed">
                 {getText('hero', 'tagline', '')}
-              </p>
               <div className="flex justify-start pt-3 sm:pt-3 md:pt-4">
                 <a
                   href="https://wa.me/56998763598?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20sesiones%20de%20bienestar.%20%C2%BFMe%20podr%C3%ADas%20orientar%3F"
