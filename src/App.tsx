@@ -317,7 +317,7 @@ function App() {
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5">
                 <Droplet className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">{getText('servicios', 'sueroterapia_title', 'Sueroterapia')}</h3>
+              <h3 className="service-title text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">{getText('servicios', 'sueroterapia_title', 'Sueroterapia')}</h3>
               <p className="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4 md:mb-5">
                 {getText('servicios', 'sueroterapia_description', 'Tratamientos personalizados para energía, hidratación, belleza y bienestar integral.')}
               </p>
@@ -334,7 +334,7 @@ function App() {
               <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 md:mb-5">
                 <Heart className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">{getText('servicios', 'enfermeria_title', 'Enfermería móvil')}</h3>
+              <h3 className="service-title text-xl sm:text-2xl md:text-3xl font-semibold text-white mb-2 sm:mb-3 md:mb-4">{getText('servicios', 'enfermeria_title', 'Enfermería móvil')}</h3>
               <p className="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4 md:mb-5">
                 {getText('servicios', 'enfermeria_description', 'Atención profesional de enfermería en tu hogar: curaciones, controles y cuidados especializados.')}
               </p>
