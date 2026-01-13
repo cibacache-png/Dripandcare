@@ -160,8 +160,7 @@ function App() {
                 </h1>
               </div>
               <p className="text-base sm:text-base md:text-lg text-white/90 leading-relaxed">
-                {getText('hero', 'subtitle', 'by Daniela Rufs')}<br />
-                {getText('hero', 'tagline', 'Recupera y regenera tu salud con sueroterapia')}
+                {getText('hero', 'tagline', '')}
               </p>
               <div className="flex justify-start pt-3 sm:pt-3 md:pt-4">
                 <a
