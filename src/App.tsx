@@ -170,7 +170,7 @@ function App() {
                     );
                   })}
                 </p>
-                <p className="text-[10px] sm:text-xs md:text-sm font-bold text-white lowercase" style={{ lineHeight: '1.3' }}>
+                <p className="text-[10px] sm:text-xs md:text-sm font-bold text-white" style={{ lineHeight: '1.3' }}>
                   {getText('hero', 'bottom_tagline', 'La regeneración comienza en la célula.')}
                 </p>
               </div>
