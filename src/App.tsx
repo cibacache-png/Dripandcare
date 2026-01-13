@@ -179,7 +179,7 @@ function App() {
         </section>
 
         {/* Quién Soy */}
-        <section id="quien-soy" className="flex items-center bg-white" style={{ minHeight: 'calc(100vh - 60px)', paddingTop: '3rem', paddingBottom: '3rem' }}>
+        <section id="quien-soy" className="flex items-center bg-[#394023]" style={{ minHeight: 'calc(100vh - 60px)', paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
           <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center">
             <div className="relative group">
@@ -199,14 +199,14 @@ function App() {
                   className="absolute left-2 sm:left-3 md:left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 sm:p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   aria-label="Imagen anterior"
                 >
-                  <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#AA225D]" />
+                  <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#394023]" />
                 </button>
                 <button
                   onClick={nextImage}
                   className="absolute right-2 sm:right-3 md:right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-1.5 sm:p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   aria-label="Imagen siguiente"
                 >
-                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#AA225D]" />
+                  <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#394023]" />
                 </button>
                 <div className="absolute bottom-2 sm:bottom-3 md:bottom-4 left-1/2 -translate-x-1/2 flex space-x-1.5 sm:space-x-2">
                   {images.map((_, index) => (
@@ -223,32 +223,32 @@ function App() {
               </div>
             </div>
             <div className="space-y-3 sm:space-y-4 md:space-y-5">
-              <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#AA225D]/10 rounded-full text-[#AA225D] text-xs sm:text-sm font-medium">
+              <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 rounded-full text-white text-xs sm:text-sm font-medium">
                 {getText('quien_soy', 'badge', 'Enfermera especializada')}
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-slate-800 font-display">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white font-display">
                 {getText('quien_soy', 'title', 'Quien soy').split(' ').map((word, idx) =>
                   idx === getText('quien_soy', 'title', 'Quien soy').split(' ').length - 1 ?
                     <span key={idx} className="font-semibold"> {word}</span> : word + ' '
                 )}
               </h2>
               <div className="space-y-3 sm:space-y-4">
-                <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-justify">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed text-justify">
                   Soy Daniela, enfermera certificada en sueroterapia y curaciones avanzadas, con 6 años de experiencia clínica.
                 </p>
-                <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-justify">
+                <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed text-justify">
                   Me formé como enfermera en la <strong>Universidad Mayor, en Santiago</strong>, y cuento con experiencia clínica en <strong>distintos niveles de atención</strong>, tanto en <strong>atención primaria (CESFAM)</strong> como en <strong>atención terciaria (Hospital)</strong>. He trabajado con <strong>pacientes hospitalizados de riesgo vital</strong>, así como con <strong>personas sanas</strong> orientadas a la prevención y al fortalecimiento de su salud.
                 </p>
 
                 {showFullBio && (
                   <>
-                    <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed text-justify">
                       Mi trayectoria profesional ha sido diversa y profundamente humana, incluyendo experiencia en <strong>piso quirúrgico, centros médicos privados, laboratorios, curaciones avanzadas, docencia clínica formando a futuros enfermeros y áreas de medicina preventiva</strong>, etapas que fortalecieron mi criterio clínico, mi capacidad de decisión y una <strong>mirada integral del cuidado</strong>.
                     </p>
-                    <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed text-justify">
                       <strong>Hoy lidero Drip & Care</strong>, un proyecto creado desde la enfermería, donde la técnica, la seguridad y la evidencia científica se unen a una atención cercana y personalizada. No creo en protocolos genéricos: creo <strong>en evaluar, escuchar y tratar a cada persona como única</strong>.
                     </p>
-                    <p className="text-sm sm:text-base md:text-lg text-slate-600 leading-relaxed text-justify">
+                    <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed text-justify">
                       Soy <strong>madre, amante de la naturaleza y del movimiento</strong>. Creo profundamente que la salud no solo se trata, <strong>se acompaña</strong>. Y eso es lo que hago en cada atención.
                     </p>
                   </>
@@ -256,7 +256,7 @@ function App() {
 
                 <button
                   onClick={() => setShowFullBio(!showFullBio)}
-                  className="text-[#AA225D] hover:text-[#8B1A4A] font-medium text-sm sm:text-base md:text-lg transition-colors duration-200 flex items-center gap-1"
+                  className="text-white hover:text-white/80 font-medium text-sm sm:text-base md:text-lg transition-colors duration-200 flex items-center gap-1"
                 >
                   {showFullBio ? 'Leer menos...' : 'Leer más...'}
                 </button>
@@ -267,7 +267,7 @@ function App() {
       </section>
 
         {/* Nuestros Servicios */}
-        <section id="servicios" className="bg-[#F8F9FA] flex items-center" style={{ minHeight: 'calc(100vh - 60px)', paddingTop: '3rem', paddingBottom: '3rem' }}>
+        <section id="servicios" className="bg-[#F8EEEE] flex items-center" style={{ minHeight: 'calc(100vh - 60px)', paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-12">
             <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-slate-200 rounded-full text-slate-700 text-xs sm:text-sm font-medium mb-3 sm:mb-4">
@@ -343,22 +343,22 @@ function App() {
         <TestimonialsSection />
 
         {/* Cómo Funciona */}
-        <section className="min-h-screen flex items-center py-12 sm:py-12 md:py-16 lg:py-24 bg-white">
+        <section className="min-h-screen flex items-center py-12 sm:py-12 md:py-16 lg:py-24 bg-[#CD6C1F]">
           <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 w-full">
             <div className="text-center mb-8 sm:mb-8 md:mb-10 lg:mb-16">
-              <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#617E1D]/10 rounded-full text-[#617E1D] text-xs sm:text-sm font-medium mb-3 sm:mb-4">
+              <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 rounded-full text-white text-xs sm:text-sm font-medium mb-3 sm:mb-4">
                 {getText('como_funciona', 'badge', 'Proceso simple')}
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-slate-800 mb-3 sm:mb-4 font-display px-2">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-white mb-3 sm:mb-4 font-display px-2">
                 <span dangerouslySetInnerHTML={{ __html: getText('como_funciona', 'title', '¿Cómo <span class="font-semibold">funciona</span>?') }} />
               </h2>
-              <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4">
+              <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-3xl mx-auto px-4">
                 {getText('como_funciona', 'subtitle', 'Un proceso profesional y cercano, diseñado para tu bienestar')}
               </p>
             </div>
 
             <div className="max-w-5xl mx-auto">
-              <div className="rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-slate-200">
+              <div className="rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/20">
                 <img
                   src="https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/COMO%20FUNCIONA-01.jpg"
                   alt="Cómo funciona el proceso de atención"
@@ -370,16 +370,16 @@ function App() {
         </section>
 
         {/* Contacto */}
-        <section id="contacto" className="flex items-center bg-white" style={{ minHeight: 'calc(100vh - 60px)', paddingTop: '3rem', paddingBottom: '3rem' }}>
+        <section id="contacto" className="flex items-center bg-[#617E1D]" style={{ minHeight: 'calc(100vh - 60px)', paddingTop: '3rem', paddingBottom: '3rem' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 w-full">
           <div className="text-center mb-6 sm:mb-8 md:mb-10">
-            <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-[#AA225D]/10 rounded-full text-[#AA225D] text-xs sm:text-sm font-medium mb-3 sm:mb-4">
+            <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 rounded-full text-white text-xs sm:text-sm font-medium mb-3 sm:mb-4">
               {getText('contacto', 'badge', 'Estamos aquí para ti')}
             </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-slate-800 mb-3 sm:mb-4 font-display">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light text-white mb-3 sm:mb-4 font-display">
               <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'title', 'Agenda tu <span class="font-semibold">sesión</span>') }} />
             </h2>
-            <p className="text-sm sm:text-base md:text-lg text-slate-600 px-4">
+            <p className="text-sm sm:text-base md:text-lg text-white/90 px-4">
               {getText('contacto', 'subtitle', 'Contáctanos y comienza tu camino hacia el bienestar integral')}
             </p>
           </div>
@@ -393,9 +393,9 @@ function App() {
               </defs>
             </svg>
             <div className="relative">
-              <div className="bg-[#F8F9FA] shadow-lg p-5 sm:p-6 md:p-8 pt-12 sm:pt-14 md:pt-16" style={{ clipPath: 'url(#tombstone-shape)' }}>
+              <div className="bg-white/95 shadow-lg p-5 sm:p-6 md:p-8 pt-12 sm:pt-14 md:pt-16" style={{ clipPath: 'url(#tombstone-shape)' }}>
                 <div className="absolute top-4 sm:top-5 md:top-6 left-1/2 transform -translate-x-1/2">
-                  <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#AA225D] fill-[#AA225D]" />
+                  <Heart className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-[#617E1D] fill-[#617E1D]" />
                 </div>
                 <div className="text-center space-y-3 sm:space-y-4 mb-5 sm:mb-6 md:mb-8 mt-5 sm:mt-6 md:mt-8">
                   <h3 className="text-base sm:text-lg md:text-xl font-semibold text-slate-800 font-display uppercase tracking-wide px-2">
@@ -404,19 +404,19 @@ function App() {
                 </div>
                 <div className="space-y-2 sm:space-y-2.5 md:space-y-3 text-slate-600 mb-5 sm:mb-6 md:mb-8">
                   <div className="flex items-start space-x-2 sm:space-x-3">
-                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#AA225D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                     <p className="text-xs sm:text-sm md:text-base leading-relaxed">Atención personalizada y profesional</p>
                   </div>
                   <div className="flex items-start space-x-2 sm:space-x-3">
-                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#AA225D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                     <p className="text-xs sm:text-sm md:text-base leading-relaxed">Servicio a domicilio en Osorno</p>
                   </div>
                   <div className="flex items-start space-x-2 sm:space-x-3">
-                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#AA225D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                     <p className="text-xs sm:text-sm md:text-base leading-relaxed">Productos de la más alta calidad</p>
                   </div>
                   <div className="flex items-start space-x-2 sm:space-x-3">
-                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#AA225D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
                     <p className="text-xs sm:text-sm md:text-base leading-relaxed">Protocolos seguros y certificados</p>
                   </div>
                 </div>
@@ -424,7 +424,7 @@ function App() {
                   href="https://wa.me/56998763598?text=Hola%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20tus%20sesiones%20de%20bienestar.%20%C2%BFMe%20podr%C3%ADas%20orientar%3F"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-[#AA225D] text-white rounded-full font-medium hover:bg-[#8B1A4A] transition-all duration-300 text-center"
+                  className="block w-full px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 text-sm sm:text-base bg-[#617E1D] text-white rounded-full font-medium hover:bg-[#4A6217] transition-all duration-300 text-center"
                 >
                   {getText('contacto', 'cta_button', 'Agenda tu evaluación gratuita')}
                 </a>

@@ -62,7 +62,7 @@ export function TestimonialsSection() {
 
   if (loading) {
     return (
-      <section id="testimonios" className="min-h-screen flex items-center py-10 sm:py-12 md:py-16 lg:py-24 bg-[#304206]">
+      <section id="testimonios" className="min-h-screen flex items-center py-10 sm:py-12 md:py-16 lg:py-24 bg-[#AA225D]">
         <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 w-full">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <div className="inline-block px-2.5 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-white/20 rounded-full text-white text-[10px] sm:text-xs md:text-sm font-medium mb-3 sm:mb-4">
@@ -85,7 +85,7 @@ export function TestimonialsSection() {
   }
 
   return (
-    <section id="testimonios" className="min-h-screen flex items-center py-10 sm:py-12 md:py-16 lg:py-24 bg-[#304206]">
+    <section id="testimonios" className="min-h-screen flex items-center py-10 sm:py-12 md:py-16 lg:py-24 bg-[#AA225D]">
       <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 w-full">
         <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-16">
           <div className="inline-block px-2.5 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-white/20 rounded-full text-white text-[10px] sm:text-xs md:text-sm font-medium mb-2 sm:mb-3 md:mb-4">
