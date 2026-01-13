@@ -369,22 +369,14 @@ function App() {
         <TestimonialsSection />
 
         {/* Cómo Funciona */}
-        <section className="min-h-screen flex items-center py-12 sm:py-12 md:py-16 lg:py-24 bg-[#CD6C1F]">
-          <div className="max-w-7xl mx-auto px-5 sm:px-6 md:px-8 w-full">
-            <div className="text-center mb-8 sm:mb-8 md:mb-10 lg:mb-16">
-              <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 rounded-full text-white text-xs sm:text-sm font-medium mb-3 sm:mb-4">
-                {getText('como_funciona', 'badge', 'Proceso simple')}
-              </div>
-            </div>
-
-            <div className="max-w-5xl mx-auto">
-              <div className="rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-                <img
-                  src="https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/COMO%20FUNCIONA-01.jpg"
-                  alt="Cómo funciona el proceso de atención"
-                  className="w-full h-auto"
-                />
-              </div>
+        <section className="flex items-center justify-center py-12 sm:py-16 md:py-20 bg-[#CD6C1F]">
+          <div className="max-w-5xl mx-auto px-5 sm:px-6 md:px-8 w-full">
+            <div className="rounded-xl sm:rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+              <img
+                src="https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/COMO%20FUNCIONA-01.jpg"
+                alt="Cómo funciona el proceso de atención"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </section>
