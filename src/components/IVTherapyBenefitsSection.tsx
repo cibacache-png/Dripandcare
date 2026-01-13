@@ -6,12 +6,6 @@ export function IVTherapyBenefitsSection() {
           <div className="inline-block px-2.5 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-[#617E1D]/10 rounded-full text-[#617E1D] text-[10px] sm:text-xs md:text-sm font-medium mb-2 sm:mb-3 md:mb-4">
             Descubre los beneficios
           </div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-slate-800 mb-2 sm:mb-3 md:mb-4 font-display px-2">
-            BENEFICIOS DE LA <span className="font-semibold">SUEROTERAPIA</span>
-          </h2>
-          <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-2">
-            La terapia intravenosa ofrece múltiples beneficios para tu salud y bienestar
-          </p>
         </div>
 
         <div className="bg-white/60 backdrop-blur-md rounded-xl sm:rounded-2xl md:rounded-3xl shadow-xl border border-white/30 overflow-hidden">
