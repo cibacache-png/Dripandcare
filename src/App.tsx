@@ -18,9 +18,9 @@ function App() {
   const [showFullBio, setShowFullBio] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const images = [
-    'https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/DSC_0539.JPG',
-    'https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/DSC_0547.JPG',
-    'https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/DSC_0559.JPG'
+    'https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/carrusel%201.PNG',
+    'https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/carrusel%202.jpg',
+    'https://cmkkzaeuzndrceftqsnn.supabase.co/storage/v1/object/public/Dripandcare/Carrusel%203.JPG'
   ];
 
   useEffect(() => {
