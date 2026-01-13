@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { supabase, type Testimonial } from '../lib/supabase';
 import { Sparkles } from 'lucide-react';
+import { usePageTexts } from '../hooks/usePageTexts';
 
 export function TestimonialsSection() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [loading, setLoading] = useState(true);
+  const { getText } = usePageTexts();
 
   useEffect(() => {
     loadTestimonials();
@@ -66,10 +68,10 @@ export function TestimonialsSection() {
         <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 w-full">
           <div className="text-center mb-10 sm:mb-12 md:mb-16">
             <div className="inline-block px-2.5 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-white/20 rounded-full text-white text-[10px] sm:text-xs md:text-sm font-medium mb-3 sm:mb-4">
-              Experiencias reales
+              {getText('testimonios', 'badge', 'Experiencias reales')}
             </div>
             <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white font-display px-2">
-              Lo que dicen <span className="font-semibold">nuestros pacientes</span>
+              {getText('testimonios', 'title', 'Lo que dicen mis pacientes')}
             </h2>
           </div>
           <div className="text-center py-8 sm:py-10 md:py-12">
@@ -89,10 +91,10 @@ export function TestimonialsSection() {
       <div className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 w-full">
         <div className="text-center mb-6 sm:mb-8 md:mb-10 lg:mb-16">
           <div className="inline-block px-2.5 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 bg-white/20 rounded-full text-white text-[10px] sm:text-xs md:text-sm font-medium mb-2 sm:mb-3 md:mb-4">
-            Experiencias reales
+            {getText('testimonios', 'badge', 'Experiencias reales')}
           </div>
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light text-white font-display px-2">
-            Lo que dicen <span className="font-semibold">nuestros pacientes</span>
+            {getText('testimonios', 'title', 'Lo que dicen mis pacientes')}
           </h2>
         </div>
 
