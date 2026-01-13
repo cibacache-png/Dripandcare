@@ -375,12 +375,6 @@ function App() {
               <div className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 bg-white/20 rounded-full text-white text-xs sm:text-sm font-medium mb-3 sm:mb-4">
                 {getText('como_funciona', 'badge', 'Proceso simple')}
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-white mb-3 sm:mb-4 font-display px-2">
-                <span dangerouslySetInnerHTML={{ __html: getText('como_funciona', 'title', '¿Cómo <span class="font-semibold">funciona</span>?') }} />
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg text-white/90 max-w-3xl mx-auto px-4">
-                {getText('como_funciona', 'subtitle', 'Un proceso profesional y cercano, diseñado para tu bienestar')}
-              </p>
             </div>
 
             <div className="max-w-5xl mx-auto">
