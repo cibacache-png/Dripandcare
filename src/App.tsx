@@ -154,11 +154,18 @@ function App() {
               </p>
               <div className="inline-block bg-white/40 backdrop-blur-md border border-white/60 rounded-lg sm:rounded-xl px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 shadow-lg text-center">
                 <h1 className="text-lg sm:text-xl md:text-2xl font-light text-white font-display mb-1 sm:mb-1.5" style={{ lineHeight: '1.2' }}>
-                  {getText('hero', 'main_title', 'RECUPERA Y REGENERA').split('').map((char, idx) =>
-                    char === 'R' ? (
-                      <span key={idx} className="font-semibold bg-gradient-to-r from-[#E91E8C] via-[#FF6B4A] to-[#FFB627] bg-clip-text text-transparent">{char}</span>
-                    ) : char
-                  )}
+                  {getText('hero', 'main_title', 'RECUPERA Y REGENERA').split(' ').map((word, wordIdx) => (
+                    <span key={wordIdx}>
+                      {word.split('').map((char, charIdx) =>
+                        char === 'R' && charIdx === 0 ? (
+                          <span key={charIdx} className="font-semibold bg-gradient-to-r from-[#E91E8C] via-[#FF6B4A] to-[#FFB627] bg-clip-text text-transparent">{char}</span>
+                        ) : (
+                          <span key={charIdx}>{char}</span>
+                        )
+                      )}
+                      {wordIdx < getText('hero', 'main_title', 'RECUPERA Y REGENERA').split(' ').length - 1 && ' '}
+                    </span>
+                  ))}
                 </h1>
                 <p className="text-xs sm:text-sm md:text-base font-light text-white mb-1" style={{ lineHeight: '1.4' }}>
                   {getText('hero', 'subtitle', 'tu salud con sueroterapia y curaciones avanzadas a domicilio').split(' ').map((word, idx) => {
