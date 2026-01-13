@@ -152,7 +152,7 @@ function App() {
               <p className="text-base sm:text-base md:text-lg text-white/90 leading-relaxed">
                 {getText('hero', 'welcome_text', 'Bienvenidas/os a')}
               </p>
-              <div className="inline-block bg-white/40 backdrop-blur-md border border-white/60 rounded-lg sm:rounded-xl px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 shadow-lg text-left">
+              <div className="inline-block bg-white/40 backdrop-blur-md border border-white/60 rounded-lg sm:rounded-xl px-5 sm:px-6 md:px-7 py-3 sm:py-3.5 md:py-4 shadow-lg text-center">
                 <h1 className="text-lg sm:text-xl md:text-2xl font-light text-white font-display mb-1 sm:mb-1.5" style={{ lineHeight: '1.2' }}>
                   {getText('hero', 'main_title', 'RECUPERA Y REGENERA').split('').map((char, idx) =>
                     char === 'R' ? (
