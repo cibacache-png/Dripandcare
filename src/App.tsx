@@ -152,14 +152,14 @@ function App() {
               <p className="text-base sm:text-base md:text-lg text-white/90 leading-relaxed">
                 {getText('hero', 'welcome_text', 'Bienvenidas/os a')}
               </p>
-              <div className="inline-block bg-white/40 backdrop-blur-md border border-white/60 rounded-xl sm:rounded-2xl px-6 sm:px-6 md:px-8 lg:px-12 py-5 sm:py-5 md:py-6 lg:py-8 shadow-lg max-w-3xl">
-                <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-white font-display mb-3 sm:mb-4" style={{ lineHeight: '1.3' }}>
+              <div className="inline-block bg-white/40 backdrop-blur-md border border-white/60 rounded-xl sm:rounded-2xl px-8 sm:px-10 md:px-12 lg:px-16 py-5 sm:py-5 md:py-6 lg:py-8 shadow-lg text-center">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-light text-white font-display mb-3 sm:mb-4 whitespace-nowrap" style={{ lineHeight: '1.3' }}>
                   <span className="font-semibold bg-gradient-to-r from-[#E91E8C] via-[#FF6B4A] to-[#FFB627] bg-clip-text text-transparent">R</span>ECUPERA Y <span className="font-semibold bg-gradient-to-r from-[#E91E8C] via-[#FF6B4A] to-[#FFB627] bg-clip-text text-transparent">R</span>EGENERA
                 </h1>
-                <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-white mb-2 sm:mb-3" style={{ lineHeight: '1.5' }}>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-light text-white mb-2 sm:mb-3" style={{ lineHeight: '1.5' }}>
                   tu salud con <span className="font-semibold">sueroterapia y curaciones avanzadas</span> a domicilio
                 </p>
-                <p className="text-sm sm:text-base md:text-lg font-bold text-white lowercase" style={{ lineHeight: '1.4' }}>
+                <p className="text-xs sm:text-sm md:text-base font-bold text-white lowercase" style={{ lineHeight: '1.4' }}>
                   La regeneración comienza en la célula.
                 </p>
               </div>
