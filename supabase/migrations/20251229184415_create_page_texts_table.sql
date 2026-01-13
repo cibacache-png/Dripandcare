@@ -63,8 +63,6 @@ CREATE POLICY "Authenticated users can delete page texts"
 INSERT INTO page_texts (section_key, text_key, text_value, text_type, order_index) VALUES
   ('hero', 'welcome_text', 'Bienvenidas/os a', 'body', 1),
   ('hero', 'title', 'DRIP & CARE', 'title', 2),
-  ('hero', 'subtitle', 'by Daniela Rufs', 'subtitle', 3),
-  ('hero', 'tagline', '', 'body', 4),
   ('hero', 'cta_button', 'Agenda tu evaluación gratuita', 'button', 5),
   
   ('quien_soy', 'badge', 'Enfermera especializada', 'badge', 1),
