@@ -392,7 +392,7 @@ function App() {
               <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'title', 'Agenda tu <span class="font-semibold">sesión</span>') }} />
             </h2>
             <p className="text-sm sm:text-base md:text-lg text-white/90 px-4">
-              {getText('contacto', 'subtitle', 'Contáctanos y comienza tu camino hacia el bienestar integral')}
+              <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'subtitle', 'Contáctame y <strong>comencemos juntas</strong> tu proceso de cuidado y recuperación.') }} />
             </p>
           </div>
 
@@ -417,19 +417,33 @@ function App() {
                 <div className="space-y-2 sm:space-y-2.5 md:space-y-3 text-slate-600 mb-5 sm:mb-6 md:mb-8">
                   <div className="flex items-start space-x-2 sm:space-x-3">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">Atención personalizada y profesional</p>
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+                      <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'card_bullet_1', '<strong>Evaluación personalizada</strong> por enfermera') }} />
+                    </p>
                   </div>
                   <div className="flex items-start space-x-2 sm:space-x-3">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">Servicio a domicilio en Osorno</p>
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+                      <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'card_bullet_2', '<strong>Sueroterapia</strong> y <strong>curaciones avanzadas</strong> a domicilio') }} />
+                    </p>
                   </div>
                   <div className="flex items-start space-x-2 sm:space-x-3">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">Productos de la más alta calidad</p>
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+                      <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'card_bullet_3', 'Atención <strong>flexible</strong> según tu horario') }} />
+                    </p>
                   </div>
                   <div className="flex items-start space-x-2 sm:space-x-3">
                     <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
-                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">Protocolos seguros y certificados</p>
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+                      <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'card_bullet_4', 'Protocolos y conocimiento técnico <strong>certificado</strong>') }} />
+                    </p>
+                  </div>
+                  <div className="flex items-start space-x-2 sm:space-x-3">
+                    <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[#617E1D] rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></div>
+                    <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+                      <span dangerouslySetInnerHTML={{ __html: getText('contacto', 'card_bullet_5', '<strong>Humano, respetuoso</strong> y <strong>centrado en la persona</strong>') }} />
+                    </p>
                   </div>
                 </div>
                 <a
